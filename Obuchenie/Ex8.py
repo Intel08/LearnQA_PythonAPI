@@ -24,9 +24,9 @@ if c == status1:
     print(result)
     print(stat)
     if stat == status2 and result is not None:
-        print("Результат есть")
+        print("Статус верный и поле result есть")
     else:
-        print("Результата нет")
+        print("Статус не верный")
 else:
     print("Error")
 
