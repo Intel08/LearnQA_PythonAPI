@@ -1,8 +1,8 @@
 import requests
 
-payload = {"login": "secret_login", "password": "secret_pass2"}
+payload = {"login": "secret_login", "password": "secret_pass"}
 responce1 = requests.post("https://playground.learnqa.ru/api/get_auth_cookie", data=payload)
-
+print(responce1.text)
 cookie_value = responce1.cookies.get("auth_cookie")
 
 cookies = {}
